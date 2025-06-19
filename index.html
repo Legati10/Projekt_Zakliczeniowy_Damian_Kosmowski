@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZAKUP AUTA SKUP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>ZAKUP AUTA SKUP</h1>
+  <input type="text" id="search" placeholder="Szukaj po marce...">
+
+  <div id="cars">
+    <div class="car" data-brand="Toyota" data-model="Corolla" data-price="50000">
+      <img src="img/car1.jpg" alt="Toyota Corolla">
+      <h3>Toyota Corolla</h3>
+      <p>Cena: 50000 PLN</p>
+      <button class="buy-btn">Wybierz</button>
+    </div>
+    <div class="car" data-brand="Audi" data-model="A4" data-price="60000">
+      <img src="img/car2.jpg" alt="Audi A4">
+      <h3>Audi A4</h3>
+      <p>Cena: 60000 PLN</p>
+      <button class="buy-btn">Wybierz</button>
+    </div>
+    <div class="car" data-brand="BMW" data-model="X5" data-price="80000">
+      <img src="img/car3.jpg" alt="BMW X5">
+      <h3>BMW X5</h3>
+      <p>Cena: 80000 PLN</p>
+      <button class="buy-btn">Wybierz</button>
+    </div>
+  </div>
+
+  <div id="form" style="display:none;">
+    <h2>Formularz zakupu</h2>
+    <div id="selected-car"></div>
+    <label>Imię i nazwisko:<br>
+      <input type="text" id="name">
+    </label><br>
+    <label>Forma płatności:<br>
+      <select id="fin">
+        <option>Gotówka</option>
+        <option>Leasing</option>
+      </select>
+    </label><br>
+    <label>Data odbioru:<br>
+      <input type="date" id="date">
+    </label><br>
+    <label>
+      <input type="checkbox" id="acc1"> Dywaniki (+200 PLN)
+    </label><br>
+    <label>
+      <input type="checkbox" id="acc2"> GPS (+500 PLN)
+    </label><br>
+    <button id="buy">Kupuję</button>
+  </div>
+
+  <div id="result" style="display:none;"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
